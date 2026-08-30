@@ -48,7 +48,6 @@ A curated list of resources for securing AI **agents** specifically: the skills,
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) — Input/output Guards backed by a Hub of composable validators; structured-output enforcement plus risk detection.
 - [Lakera Guard](https://github.com/lakeraai/guard) — API-based guard for prompt injection, jailbreak, and toxic content detection; lightweight enough for per-request agent guarding.
 - [LangFuse](https://github.com/langfuse/langfuse) — Open-source LLM observability platform: trace every agent call, log tool invocations, and set up alerts on anomalous behavior.
-- [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) — Self-hosted runtime for agent tool security: MCP permissions, approval gates, credential handling, sandboxed execution, and auditable session replay.
 - [Weave (Weights & Biases)](https://github.com/wandb/weave) — Observability and evaluation for LLM apps; tracks agent tool calls, traces, and evaluation metrics.
 - [Helicone](https://github.com/Helicone/helicone) — Open-source LLM gateway with request logging, caching, and analytics; adds an audit trail to agent API calls.
 - [Pangea AI Guard](https://pangea.cloud/ai-guard) — Managed API for content moderation, prompt injection detection, and PII filtering; drop-in for agent pipelines.
