@@ -343,6 +343,7 @@ Resources for securing AI **agents** specifically: the skills, plugins, MCP serv
 - [Weave (Weights & Biases)](https://github.com/wandb/weave) — Observability and evaluation for LLM apps; tracks agent tool calls, traces, and evaluation metrics.
 - [Helicone](https://github.com/Helicone/helicone) — Open-source LLM gateway with request logging, caching, and analytics; adds an audit trail to agent API calls.
 - [Pangea AI Guard](https://pangea.cloud/docs/ai-guard/overview) — Managed API for prompt injection detection, malicious-entity and secret detection, and PII filtering; drop-in for agent pipelines. Now a CrowdStrike product.
+- [Patronus Ark](https://github.com/patronus-protect/patronus-security) — Rust/Python library for local scanning of agent prompts and tool traffic for prompt injection, secrets, PII, and tool risks (GPL-3.0-only; model-backed scanning requires downloaded assets).
 - [SandBase Harness](https://github.com/sandbaseai/sandbase-harness) — Local-first, self-hosted runtime for governed agent sessions with MCP tools, approval and credential controls, and audit/replay; sandbox isolation depends on the selected backend and deployment configuration.
 
 ### Red-Teaming & Testing
