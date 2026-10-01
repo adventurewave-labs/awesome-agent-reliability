@@ -332,6 +332,7 @@ Resources for securing AI **agents** specifically: the skills, plugins, MCP serv
 - [TruffleHog](https://github.com/trufflesecurity/trufflehog) — Secrets scanner with 800+ credential detectors — essential for agent repos that store cloud/LLM provider keys in config files.
 - [detect-secrets](https://github.com/Yelp/detect-secrets) — Yelp's baseline-first approach to detecting secrets in code; useful as a pre-commit hook for agent config files.
 - [zizmor](https://github.com/zizmorcore/zizmor) — Security linting for GitHub Actions workflows — agents that run in CI/CD often have overly permissive workflow permissions.
+- [Skill Safe](https://skillsafe.online) — Free hosted security checker for agent skills; reports traceable findings and scan limitations before installation.
 - [KeyDrift](https://keydrift.dev) — Scans deployed HTML and JavaScript for exposed secrets while recognizing public browser credentials that should not be treated as leaks.
 
 ### Runtime Guardrails
