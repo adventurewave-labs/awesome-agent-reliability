@@ -352,6 +352,7 @@ Resources for securing AI **agents** specifically: the skills, plugins, MCP serv
 - [HarmBench](https://github.com/centerforaisafety/HarmBench) — Standardized evaluation framework for assessing adversarial robustness across multiple harm categories.
 - [TextAttack](https://github.com/QData/TextAttack) — NLP adversarial attack framework: generates adversarial examples via character-, word-, and sentence-level perturbations.
 - [ART (Adversarial Robustness Toolbox)](https://github.com/Trusted-AI/adversarial-robustness-toolbox) — IBM's Python toolbox for adversarial ML; attacks, defenses, and benchmarks across modalities.
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) — Open-source (GPLv3) autonomous penetration-testing platform whose LLM specialist (added in v1.4.0) tests LLM and AI inference endpoints against the OWASP LLM Top 10 (prompt injection, system prompt leakage, insecure output handling, SSRF via the model, unbounded consumption), integrating NVIDIA garak, with reproducible proof of exploitation.
 
 ### Benchmarks & Evaluation
 
