@@ -4,16 +4,17 @@
 # Full reference: https://lychee.cli.rs/usage/config-file/
 
 # This list links to slower/rate-limit-prone sites (arxiv.org, nist.gov,
-# cisa.gov PDFs, iso.org) alongside plain GitHub repos — give those a
+# cisa.gov PDFs, iso.org, personal blogs, crates.io) alongside plain GitHub repos — give those a
 # realistic amount of time and a few retries instead of flaking CI on a
 # slow response.
 timeout = 20
 max_retries = 3
 retry_wait_time = 5
 
-# These hosts 403 every request from this CI environment regardless of
-# User-Agent or retries - both are government/standards-body sites with
-# WAFs that block automated/cloud-CI traffic outright, not dead links.
+# These hosts 403 (or 429) every request from this CI environment regardless of
+# User-Agent or retries - government/standards-body sites and bot-defensive
+# hosts (Cloudflare challenges, Substack/Medium anti-scraping, archive.today's
+# rate limiting) that block automated/cloud-CI traffic outright, not dead links.
 # Each URL was manually verified live and correct (fetched and read
 # directly) on 2026-08-30. Excluded here rather than accepting 403
 # globally, so a genuine 403 anywhere else still fails the check.
@@ -27,6 +28,19 @@ exclude = [
     # generative AI jailbreak technique". microsoft.com's WAF 403s this CI
     # environment's requests; verified live in a browser on 2026-08-30.
     '^https://www\.microsoft\.com/en-us/security/blog/2024/06/26/mitigating-skeleton-key-a-new-type-of-generative-ai-jailbreak-technique/$',
+    # --- Carried over from awesome-loop-engineering's lychee.toml when that
+    # list was merged in (each verified live there on 2026-08-30). ---
+    # archive.today mirror of the steipete X citation - 429s CI (its own
+    # anti-bot rate limiting), loads fine for a real visitor.
+    '^https://archive\.ph/sOGZN$',
+    # Dev Interrupted (Substack) interview with Geoffrey Huntley.
+    '^https://devinterrupted\.substack\.com/p/inventing-the-ralph-wiggum-loop-creator$',
+    # Same episode's podcast page on linearb.io.
+    '^https://linearb\.io/dev-interrupted/podcast/inventing-the-ralph-wiggum-loop$',
+    # Medium article on the Ralph Loop.
+    '^https://medium\.com/@tentenco/what-is-ralph-loop-a-new-era-of-autonomous-coding-96a4bb3e2ac8$',
+    # buildmvpfast.com blog post - sits behind a Cloudflare JS challenge.
+    '^https://www\.buildmvpfast\.com/blog/harness-engineering-agent-loop-agentic-coding-framework-2026$',
 ]
 
 # Redirects are expected and fine (GitHub org/repo renames are exactly what
