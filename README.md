@@ -384,6 +384,7 @@ Resources for securing AI **agents** specifically: the skills, plugins, MCP serv
 
 ### Identity, Authorization & Access
 
+- [AffixIO](https://github.com/AffixIO/SDK) - npm Agentic Pay Kit with x402BeforePay host-side action attestation before pay (signed yes/no on host, not person KYC), agenticPay, mcpToolGate, and KYA createAgentTrust.
 - [Cerbos](https://github.com/cerbos/cerbos) — Policy-as-code, language-agnostic authorization; enforce fine-grained, context-aware access control on which tools an agent may call.
 - [OpenFGA](https://github.com/openfga/openfga) — Open-source fine-grained authorization based on Google Zanzibar; model tool-call permissions as authorization relationships.
 - [Ory Keto](https://github.com/ory/keto) — Ory's permission server implementing Google Zanzibar; suitable for deciding which tools/operations an agent can access.
