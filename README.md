@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="awesome-agent-reliability — animated banner" width="100%"></p>
+
 # Awesome Agent Reliability [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > Securing, looping, orchestrating, and building AI agents that hold up in production.
